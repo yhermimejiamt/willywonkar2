@@ -11,14 +11,11 @@ import lombok.NoArgsConstructor;
  * @author Engineer Yhermi Mejía Sarmiento
  */
 
-@Document(collection = "user")
+@Document(collection = "users")
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-
 public class User {
-
-
     @Id
     private Integer id;
     private String identification;
@@ -29,5 +26,4 @@ public class User {
     private String password;
     private String zone;
     private String type;
-
 }

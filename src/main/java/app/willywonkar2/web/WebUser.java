@@ -62,7 +62,11 @@ public class WebUser {
     }
 
     @GetMapping("/{email}/{password}")
-    public Optional<User> authenticateUser(@PathVariable("email") String email, @PathVariable("password") String password) {
+    public Optional<User> authenticateUser(@PathVariable("email") String email,
+            @PathVariable("password") String password) {
         return service.authenticateUser(email, password);
     }
+
+
+
 }
