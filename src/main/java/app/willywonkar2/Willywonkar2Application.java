@@ -6,9 +6,9 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 import app.willywonkar2.Interface.InterfaceUser;
-import app.willywonkar2.model.User;
-import java.util.List;
-import java.util.Optional;
+//import app.willywonkar2.model.User;
+//import java.util.List;
+//import java.util.Optional;
 
 @SpringBootApplication
 public class Willywonkar2Application implements CommandLineRunner {
