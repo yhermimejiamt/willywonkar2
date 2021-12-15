@@ -31,8 +31,14 @@ public class ServiceUser {
         return repository.emailExist(email);
     }
 
-    public Optional<User> authenticateUser(String email, String password) {
-        return repository.authenticateUser(email, password);
+    public User authenticateUser(String email, String password) {
+        Optional<User> usuario = repository.authenticateUser(email, password);
+
+        if (usuario.isEmpty()) {
+            return new User();
+        } else {
+            return usuario.get();
+        }
     }
 
     public User createUser(User user) {

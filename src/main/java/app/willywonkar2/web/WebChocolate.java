@@ -39,14 +39,14 @@ public class WebChocolate {
 
     @PostMapping("/new")
     @ResponseStatus(HttpStatus.CREATED)
-    public Chocolate createChocolate(@RequestBody Chocolate gadget) {
-        return service.createChocolate(gadget);
+    public Chocolate createChocolate(@RequestBody Chocolate order) {
+        return service.createChocolate(order);
     }
     
     @PutMapping("/update")
     @ResponseStatus(HttpStatus.CREATED)
-    public Chocolate updateChocolate(@RequestBody Chocolate gadget) {
-        return service.updateChocolate(gadget);
+    public Chocolate updateChocolate(@RequestBody Chocolate order) {
+        return service.updateChocolate(order);
     }
 
     @DeleteMapping("/{reference}")
